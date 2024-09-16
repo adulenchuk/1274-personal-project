@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Project</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <link href="css/global.css" rel="stylesheet" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <article>
+      <img src="img/blog-post-choose-a-pen.png" alt="variety of pens" />
+      <div>
+        <time datetime="16 Feb 2022">16 Feb 2022</time>
+        <h3>How to Choose a Calligraphy Pen?</h3>
+        <p>Katsuko Mirino</p>
+        <p>
+          Unlike regular writing, where a simple ballpoint pen works,
+          calligraphy uses a fountain pen. Without this tool, it is impossible
+          to write beautiful text in calligraphic handwriting. However, a
+          fountain pen is a highly individual instrument. Plus, many also use
+          dip pens and brush pens. Let's consider the main criteria for
+          choosi...
+        </p>
+      </div>
+    </article>
+    <footer>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global-footer.partial.html"
+      ></section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Project</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <link href="css/global.css" rel="stylesheet" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <article>
+      <img
+        src="img/blog-post-caligraphy.png"
+        alt="someon practicing calligraphy"
+      />
+      <div>
+        <time datetime="1 Feb 2022">1 Feb 2022</time>
+        <h3>What Is Calligraphy?</h3>
+        <p>Katsuko Mirino</p>
+        <p>
+          Everyone knows that calligraphy is the art of beautiful handwriting.
+          This word appeared in Ancient Greece and was literally translated as
+          "beautiful handwriting". Today, the most popular and most advanced
+          style of calligraphic writing is the so-called English Cursive or
+          Copperplate. Calligraphy gained popularity in the 19t...
+        </p>
+      </div>
+    </article>
+    <footer>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global-footer.partial.html"
+      ></section>
+    </footer>
+  </body>
+</html>
