@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Project</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <link href="css/global.css" rel="stylesheet" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <h2>Blog</h2>
+      <p>Read our latest articles about calligraphy and lettering!</p>
+      <article>
+        <img src="img/blog-post-choose-a-pen.png" alt="variety of pens" />
+        <div>
+          <time datetime="16 Feb 2022">16 Feb 2022</time>
+          <h3><a href="#"> How to Choose a Calligraphy Pen?</a></h3>
+          <p>
+            <a href="#">
+              Unlike regular writing, where a simple ballpoint pen works,
+              calligraphy uses a fountain pen. Without this tool, it is
+              impossible to write beautiful text in calligraphic handwriting.
+              However, a fountain pen is a highly individual instrument. Plus,
+              many also use dip pens and brush pens. Let's consider the main
+              criteria for choosi...</a
+            >
+          </p>
+        </div>
+      </article>
+      <article>
+        <img
+          src="img/blog-post-caligraphy.png"
+          alt="someon practicing calligraphy"
+        />
+        <div>
+          <time datetime="1 Feb 2022">1 Feb 2022</time>
+          <h3><a href="#"> What Is Calligraphy?</a></h3>
+          <p>
+            <a href="#">
+              Everyone knows that calligraphy is the art of beautiful
+              handwriting. This word appeared in Ancient Greece and was
+              literally translated as "beautiful handwriting". Today, the most
+              popular and most advanced style of calligraphic writing is the
+              so-called English Cursive or Copperplate. Calligraphy gained
+              popularity in the 19t...</a
+            >
+          </p>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global-footer.partial.html"
+      ></section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Project</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <link href="css/global.css" rel="stylesheet" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <img src="img/contacts-headline.png" alt="lady practicing cursive" />
+      <section>
+        <div>
+          <h2>Contacts</h2>
+          <!--Try to do this svg in CSS-->
+          <img src="img/cursive-line.svg" />
+          <p>
+            If you want to sign up for a course or just ask a question, don't
+            hesitate to contact or visit us!
+          </p>
+          <div>
+            <div>
+              <div>
+                <h3>Address</h3>
+              </div>
+              <p>79-68 77th Rd</p>
+              <p>Queens, NY 11385</p>
+            </div>
+            <div>
+              <div>
+                <h3>Hours</h3>
+              </div>
+              <p>Monday - Saturday: 11 AM - 9 PM</p>
+              <p>Sunday: 11 AM - 7 PM</p>
+            </div>
+            <div>
+              <div>
+                <h3>Contacts</h3>
+              </div>
+              <a href="tel:+12345678900" data-action="phone"
+                ><span>+1 (234) 567 89 00</span></a
+              >
+              <a
+                href="mailto:calligraphy.t@email.com"
+                data-action="email"
+                class="ui-link"
+                ><span>calligraphy.t@email.com</span></a
+              >
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193730.23282228957!2d-74.03599835859305!3d40.65116134373082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24369470a592b%3A0x4109d18b6c5c7b05!2sQueens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sua!4v1726524890249!5m2!1sen!2sua"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <section>
+          <h3>Quote Us</h3>
+          <div>
+            <form action="#" data-proofer-ignore>
+              <input type="text" placeholder="Enter your full name*" required />
+              <input
+                type="tel"
+                placeholder="Enter your phone number*"
+                required
+              />
+              <input type="email" placeholder="Enter your e-mail*" required />
+              <input type="text" placeholder="Course" required />
+              <input type="text" placeholder="Type your message" />
+              <button type="submit"></button>
+            </form>
+          </div>
+        </section>
+      </section>
+    </div>
+    <footer>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global-footer.partial.html"
+      ></section>
+    </footer>
+  </body>
+</html>
