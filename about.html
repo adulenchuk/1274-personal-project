@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Project</title>
+    <link
+      rel="shortcut icon"
+      href="https://placekitten.com/96/139"
+      type="image/x-icon"
+    />
+    <link href="css/global.css" rel="stylesheet" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img
+      src="img/about/about-headline.png"
+      alt="pens of various colors and shapes"
+    />
+
+    <section>
+      <h2>About</h2>
+      <p>
+        We're a NY-based school of calligraphy and lettering. We invite children
+        and adults to learn how to write beautifully and master the art that is
+        several thousand years old. In addition, lettering courses can be useful
+        for those who make money by developing invitations, postcards, etc.
+        Let's be honest: to master calligraphy or lettering, you will need
+        perseverance and a lot of patience. But the result is worth it!
+      </p>
+    </section>
+
+    <!--Coaches Section-->
+    <section>
+      <h2>Meet Our Coaches</h2>
+      <p>These guys are totally in love with lettering and calligraphy!</p>
+      <div>
+        <article>
+          <img src="img/about/about-coaches-ann.webp" alt="" coach Ann />
+          <h3>Ann Howard</h3>
+          <div>
+            <p>Lettering Coach |</p>
+            <p>10 years of experience</p>
+          </div>
+          <p>
+            Ann was born in Canada, mastered the art of Japanese calligraphy,
+            then moved to the USA and took up lettering professionally. She now
+            creates gorgeous handwritten invitations for various brands. She is
+            ready to teach you how to write beautifully and make money from it!
+          </p>
+          <div>
+            <!--for icons-->
+          </div>
+        </article>
+        <article>
+          <img src="img/about/about-coaches-tom.webp" alt="coach Tom" />
+          <h3>Tom Stone</h3>
+          <div>
+            <p>Lettering Coach |</p>
+            <p>9 years of experience</p>
+          </div>
+          <p>
+            Tom is a famous American illustrator and artist. He often uses
+            lettering techniques in his works. Tom has a unique and recognizable
+            style that he can teach you too. Sign up for his lettering course
+            and learn to write beautifully. And, perhaps, this hobby will become
+            a profitable job for you!
+          </p>
+          <div>
+            <!--for icons-->
+          </div>
+        </article>
+        <article>
+          <img src="img/about/about-coaches-susan.webp" alt="coach Susan" />
+          <h3>Susan Mirino</h3>
+          <div>
+            <p>Calligraphy Coach</p>
+            <p>7 years of experience</p>
+          </div>
+          <p>
+            Susan is an American artist, illustrator, and renowned calligrapher.
+            She works with many European and American brands. Susan is
+            considered by many to be the genius of fountain pets. Sign up for
+            her calligraphy course to master this art with her professional
+            help.
+          </p>
+          <div>
+            <!--for icons-->
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--Join the Team Section-->
+    <section>
+      <h2>Want to Join Our Dream Team?</h2>
+      <p>
+        Leave your phone number and we will contact you shortly to invite you
+        for an interview.
+      </p>
+      <form>
+        <input type="tel" placeholder="Phone number" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global-footer.partial.html"
+      ></section>
+    </footer>
+  </body>
+</html>
